@@ -37,9 +37,9 @@
 
       <div class="flex justify-between items-center gap-9">
         <button
-          class="text-white bg-customRed text-[16px] leading-[18.78px] py-[10px] px-[20px]"
+          class="text-white bg-customRed text-[16px] leading-[18.78px] py-[10px] px-[20px] hover:bg-white text-customRed border border-customRed hover:text-customRed hover:border-customRed transition-colors duration-300 ease-in-out"
         >
-          Reservasyon Yap
+          Rezervasyon Yap
         </button>
         <button class="text-customRed py-[11.5px] px-[6.25px]">
           <i
@@ -146,7 +146,9 @@
             <br><br>
             Otelimiz, rahat odaları, kaliteli restoranları ve kapsamlı toplantı salonlarıyla her türlü ihtiyaca hitap eder. Profesyonel ve güler yüzlü ekibimiz, konaklamanızın en iyi şekilde geçmesi için her daim hazırdır. W Hotel Istanbul’da, konfor ve kaliteyi bir arada yaşayın.
           </span>
-          <button class="raleway font-bold text-customRed text-[20px] leading-[23.48px] self-start hover-underline-animation">Hakkımızda</button>
+          <button class="raleway font-bold text-customRed text-[20px] leading-[23.48px] self-start relative after:content-[''] after:absolute after:w-[calc(100%-26px)] after:h-[2px] after:bg-customRed after:left-[10px] after:bottom-[-2px] after:transition-transform after:duration-300 hover:after:translate-x-[-9%]">
+            HAKKIMIZDA
+          </button>
         </div>
         <div class="relative w-[680px] h-[587px]">
           <img src="assets/images/content/W-Hotel/outside.jpg" alt="outside hotel" class="w-[513px] h-auto object-cover absolute top-0 right-0">
@@ -204,7 +206,7 @@
 
       <div class="whitespace-nowrap flex gap-[62px] pt-[60px] overflow-x-hidden scroll-smooth select-none pl-[224px]" id="rooms-container">
         <!-- CARD-1 -->
-        <div class="inline-block min-w-[534px]">
+        <div class="min-w-[534px]">
           <div class="overflow-hidden">
             <img class="transition-transform duration-300 ease-in-out hover:scale-105" src="assets/images/content/Rooms/room.png" alt="room">
           </div>
@@ -229,7 +231,7 @@
         </div>
 
         <!-- CARD-2 -->
-        <div class="inline-block min-w-[534px]">
+        <div class="min-w-[534px]">
           <div class="overflow-hidden">
             <img class="transition-transform duration-300 ease-in-out hover:scale-105" src="assets/images/content/Rooms/room.png" alt="room">
           </div>
@@ -254,7 +256,7 @@
         </div>
 
         <!-- CARD-3 -->
-        <div class="inline-block min-w-[534px]">
+        <div class="min-w-[534px]">
           <div class="overflow-hidden">
             <img class="transition-transform duration-300 ease-in-out hover:scale-105" src="assets/images/content/Rooms/room.png" alt="room">
           </div>
@@ -279,7 +281,7 @@
         </div>
 
         <!-- CARD-4 -->
-        <div class="inline-block min-w-[534px]">
+        <div class="min-w-[534px]">
           <div class="overflow-hidden">
             <img class="transition-transform duration-300 ease-in-out hover:scale-105" src="assets/images/content/Rooms/room.png" alt="room">
           </div>
@@ -304,7 +306,7 @@
         </div>
 
         <!-- CARD-5 -->
-        <div class="inline-block min-w-[534px]">
+        <div class="min-w-[534px]">
           <div class="overflow-hidden">
             <img class="transition-transform duration-300 ease-in-out hover:scale-105" src="assets/images/content/Rooms/room.png" alt="room">
           </div>
@@ -329,7 +331,7 @@
         </div>
 
         <!-- CARD-6 -->
-        <div class="inline-block min-w-[534px]">
+        <div class="min-w-[534px]">
           <div class="overflow-hidden">
             <img class="transition-transform duration-300 ease-in-out hover:scale-105" src="assets/images/content/Rooms/room.png" alt="room">
           </div>
@@ -489,8 +491,88 @@
 
 
     <!-- FOOTER START -->
-    <div class="pt-[120px]"></div>
-    <!-- FOOTER END -->
+    <div class="bg-black text-white pb-[138px] pt-[72px] pl-[72px] mt-[120px] relative">
+      <div class="flex gap-[135px] pr-[488px]">
+        <!-- Logo and Social Icons -->
+        <div class="flex flex-col">
+          <a href="#"><img src="assets/images/Footer/Logo.png" alt="W Hotel"></a>
+          <div class="flex items-center gap-[20px] pt-[72px]">
+            <a href="#" class="text-white hover:text-customRed"><img src="assets/images/Footer/facebook.svg" alt="facebook"></a>
+            <a href="#" class="text-white hover:text-customRed"><img src="assets/images/Footer/x.svg" alt="x"></a>
+            <a href="#" class="text-white hover:text-customRed"><img src="assets/images/Footer/instagram.svg" alt="instagram"></a>
+            <a href="#" class="text-white hover:text-customRed"><img src="assets/images/Footer/linkedin.svg" alt="linkedin"></a>
+            <a href="#" class="text-white hover:text-customRed"><img src="assets/images/Footer/simple-icons_tripadvisor.svg" alt="icons_tripadvisor"></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-wrap gap-[130px] w-[500px] ml-[114px]">
+          <div class="w-[129px]">
+            <h4 class="gilda-display-regular text-[20px] leading-[23.54px]">OTELİMİZ</h4>
+            <ul class="mt-[15px]">
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Hakkımızda</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Sertifikalarımız</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Galeri</a></li>
+            </ul>
+          </div>
+
+          <div class="w-[129px]">
+            <h4 class="gilda-display-regular text-[20px] leading-[23.54px]">AYRICALIKLARIMIZ</h4>
+            <ul class="mt-[15px]">
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">W Spa</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Yüzme Havuzu</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Restoran</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Toplantı Odası</a></li>
+            </ul>
+          </div>
+
+          <div class="w-[115px]">
+            <h4 class="gilda-display-regular text-[20px] leading-[23.54px]">ODALARIMIZ</h4>
+            <ul class="mt-[15px]">
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Standart Oda</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Deluxe Oda</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Junior Oda</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Trible Oda</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Engelli Odası</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Kral Dairesi</a></li>
+            </ul>
+          </div>
+
+          <div class="w-[215px]">
+            <h4 class="gilda-display-regular text-[20px] leading-[23.54px]">KVKK</h4>
+            <ul class="mt-[15px]">
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Çalışan Adayı Aydınlatma Metni</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Hotspot Aydınlatma Metni</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Veri Sorumlusuna Başvuru Formu</a></li>
+              <li><a href="#" class="hover:text-customRed josefin-sans font-light">Kurumsal Genel Aydınlatma Metni</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="flex flex-col gap-[24px]">
+          <h4 class="gilda-display-regular text-[20px] leading-[23.54px]">İLETİŞİM</h4>
+          <div class="flex gap-[17px] flex-col">
+            <li class="flex items-center gap-[5px] josefin-sans font-light cursor-pointer hover:text-customRed"><img src="assets/images/Footer/location.svg" alt="location">Lorem ipsum dolor sit amet.</li>
+            <li class="flex items-center gap-[5px] josefin-sans font-light cursor-pointer hover:text-customRed"><img src="assets/images/Footer/mail.svg" alt="mail"> info@whotel.com</li>
+            <li class="flex items-center gap-[5px] josefin-sans font-light cursor-pointer hover:text-customRed"><img src="assets/images/Footer/phone.svg" alt="phone"> 0212 555 55 55</li>
+          </div>
+        </div>
+
+        <div class="absolute top-[72px] right-[179px]">
+          <a href="#" class="mt-[40px]">
+            <img src="assets/images/Footer/tripadvisor.png" alt="TripAdvisor"">
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+  <div class="raleway font-normal py-[32px] text-center text-white bg-customRed">
+    <span>© 2024 W Hotel Istanbul<br>All Rights Reserved.</span>
+  </div>
+<!-- FOOTER END -->
+
 
     <script src="assets/js/slider.js"></script>
   </body>
