@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap");
+
+.gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.raleway {
+  font-family: "Raleway", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fa-bars {
+  width: 50px;
+  height: 50px;
+}
+
+.dot.active {
+  background-color: #d11242;
+}
+
+/* Buton hover stilleri */
+button.prev:hover,
+button.next:hover {
+  color: #d11242;
+}
+
+/* W Hotel Hakkimizda */
+.hover-underline-animation {
+  position: relative;
+  color: #d11242;
+  text-decoration: none;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 20px);
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -3px;
+  left: 10px;
+  background-color: #d11242;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

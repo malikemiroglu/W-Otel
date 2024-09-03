@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              customRed: "#D11242",
+            },
+          },
+        },
+      };
+    </script>
+    <title>W Otel</title>
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav
+      class="bg-white flex justify-between items-center py-[15px] px-[71px] fixed top-0 left-0 w-full z-10"
+    >
+      <a href="#"
+        ><img src="assets/images/Logo/Otel-Logo.svg" alt="W Hotel"
+      /></a>
+
+      <div class="flex justify-between items-center gap-9">
+        <button
+          class="text-white bg-customRed text-[16px] leading-[18.78px] py-[10px] px-[20px]"
+        >
+          Reservasyon Yap
+        </button>
+        <button class="text-customRed py-[11.5px] px-[6.25px]">
+          <i
+            class="fa-solid fa-bars"
+            style="width: 37.5px; height: 25px; font-size: 25px"
+          ></i>
+        </button>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- SLIDER START -->
+    <div class="slider relative overflow-hidden w-full h-screen">
+      <div class="slides flex transition-transform duration-[2000ms] ease-in-out">
+        <img
+          src="assets/images/Sliders/slider-1.jpg"
+          alt="slider-1"
+          class="w-full object-cover"
+        />
+        <img
+          src="assets/images/Sliders/slider-2.jpg"
+          alt="slider-2"
+          class="w-full object-cover"
+        />
+        <img
+          src="assets/images/Sliders/slider-3.jpg"
+          alt="slider-3"
+          class="w-full object-cover"
+        />
+        <img
+          src="assets/images/Sliders/slider-4.jpg"
+          alt="slider-4"
+          class="w-full object-cover"
+        />
+      </div>
+    </div>
+    
+    
+      <!-- Slider Kontrolleri -->
+      <button class="prev absolute top-1/2 top-[420px] left-4 text-white text-2xl transform z-20">
+        &#10094;
+      </button>
+      <button class="next absolute top-1/2 top-[420px] right-4 text-white text-2xl transform z-20">
+        &#10095;
+      </button>
+    
+      <!-- Slide Indikatorleri -->
+      <div class="dots absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <span class="dot w-4 h-4 bg-white rounded-full cursor-pointer"></span>
+        <span class="dot w-4 h-4 bg-white rounded-full cursor-pointer"></span>
+        <span class="dot w-4 h-4 bg-white rounded-full cursor-pointer"></span>
+        <span class="dot w-4 h-4 bg-white rounded-full cursor-pointer"></span>
+      </div>
+    </div>
+
+      <!-- Telefon Rezervasyon Button -->
+      <div class="absolute top-[421px] left-[76px] flex items-center">
+        <a
+          href="tel:02125555555"
+          class="flex flex-col items-center text-white gap-[11px]"
+        >
+          <div class="flex flex-row items-center">
+            <span
+              class="text-[24px] leading-[28.8px]"
+              style="writing-mode: vertical-rl; transform: rotate(180deg)"
+            >
+              0212 555 55 55
+            </span>
+            <span
+              class="text-[14px] leading-[19.2px]"
+              style="writing-mode: vertical-rl; transform: rotate(180deg)"
+            >
+              REZERVASYON YAP
+            </span>
+          </div>
+          <div class="p-[9px] border rounded-full">
+            <img src="assets/images/Sliders/Vector.svg" alt="phone" />
+          </div>
+        </a>
+      </div>
+
+      <!-- Translate and wp button -->
+      <div class="absolute top-[476px] right-0 flex flex-col">
+        <div class="bg-black py-[19px] px-[10px] cursor-pointer">
+          <img src="assets/images/Sliders/translate.svg" alt="" />
+        </div>
+        <div class="bg-customRed py-[20px] px-[10px] cursor-pointer">
+          <img src="assets/images/Sliders/wp.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- SLIDER END -->
+
+
+    <!-- CONTENT-1 START -->
+    <div class="pt-[120px] px-[226px]">
+      <h1 class="gilda-display-regular text-black text-[48px] text-center">W Hotel Istanbul</h1>
+      <div class="pt-[60px] flex gap-[156px]">
+        <div class="josefin-sans text-[21px] leading-[31px] flex-1 py-[46.5px] flex flex-col gap-[30px]">
+          <span>
+            W Hotel Istanbul, İstanbul'un tarihi ve ticari merkezlerinden birinde, konforlu ve modern konaklama imkanları sunan bir oteldir. Misafirlerimize hem iş hem de tatil amaçlı konaklamalarda mükemmel hizmet sunmayı hedefliyoruz.
+            <br><br>
+            Yürüme mesafesindeki tramvay ile metro ve metrobüs istasyonuna sadece 5 dakika uzaklıkta olan W Hotel Istanbul; tarihi yarım ada, İstanbul Havalimanı’na rahatlıkla ulaşım sağlayacağınız bir lokasyonda konumlanmıştır.
+            <br><br>
+            Otelimiz, rahat odaları, kaliteli restoranları ve kapsamlı toplantı salonlarıyla her türlü ihtiyaca hitap eder. Profesyonel ve güler yüzlü ekibimiz, konaklamanızın en iyi şekilde geçmesi için her daim hazırdır. W Hotel Istanbul’da, konfor ve kaliteyi bir arada yaşayın.
+          </span>
+          <button class="raleway text-customRed text-[20px] leading-[23.48px] self-start hover-underline-animation">Hakkımızda</button>
+        </div>
+        <div class="relative w-[680px]">
+          <img src="assets/images/content/W-Hotel/outside.jpg" alt="" class="w-[513px] h-auto object-cover absolute right-0">
+          <img src="assets/images/content/W-Hotel/inside.jpg" alt="" class="w-[416px] h-auto object-cover absolute top-[260px] left-0">
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT-1 END -->
+
+    <script src="assets/js/slider.js"></script>
+  </body>
+</html>
