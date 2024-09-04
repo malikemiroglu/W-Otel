@@ -44,29 +44,6 @@ function disableButtonsTemporarily() {
   }, transitionDuration);
 }
 
-nextBtn.addEventListener("click", () => {
-  stopAutoSlide();
-  disableButtonsTemporarily();
-  nextSlide();
-  startAutoSlide();
-});
-
-prevBtn.addEventListener("click", () => {
-  stopAutoSlide();
-  disableButtonsTemporarily();
-  prevSlide();
-  startAutoSlide();
-});
-
-dots.forEach((dot, idx) => {
-  dot.addEventListener("click", () => {
-    stopAutoSlide();
-    showSlide(idx);
-    startAutoSlide();
-  });
-});
-
-showSlide(0);
 // startAutoSlide();
 
 // ROOMS SCROLL
@@ -96,4 +73,22 @@ slider.addEventListener("mousemove", (e) => {
   const x = e.pageX - slider.offsetLeft;
   const walk = (x - startX) * 2;
   slider.scrollLeft = scrollLeft - walk;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".secondNavbar");
+  const reservation = document.querySelector(".reservation");
+  window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 400) {
+      navbar.style.opacity = "1";
+      navbar.style.visibility = "visible";
+      reservation.style.visibility = "hidden";
+    } else {
+      navbar.style.opacity = "0";
+      navbar.style.visibility = "hidden";
+      reservation.style.visibility = "visible";
+    }
+  });
 });

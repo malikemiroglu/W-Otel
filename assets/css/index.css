@@ -20,6 +20,12 @@
   font-style: normal;
 }
 
+.secondNavbar {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
 .fa-bars {
   width: 50px;
   height: 50px;
@@ -32,4 +38,29 @@
 button.prev:hover,
 button.next:hover {
   color: #d11242;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ffffff80; /* Beyaz renkte 1px kalınlığında bir çizgi */
+}
+
+.reservation-container {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-item {
+  min-width: 150px;
+}
+
+.text-customRed {
+  color: #d11242;
+}
+
+.bg-customRed {
+  background-color: #d11242;
+}
+
+.border-customRed {
+  border-color: #d11242;
 }
