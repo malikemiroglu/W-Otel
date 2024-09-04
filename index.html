@@ -52,71 +52,151 @@
         </button>
       </div>
     </nav>
+
+    <!-- defaultNavbar -->
+    <nav class="defaultNavbar absolute top-0 w-full z-20">
+      <div class="flex justify-end items-center gap-[30px] py-[15px] pr-[90px]">
+        <span class="josefin-sans font-light text-white">KVKK</span>
+        <div class="flex items-center gap-[5px] text-white josefin-sans font-light cursor-pointer"><img src="assets/images/Footer/mail.svg" alt="mail">info@whotel.com</div>
+        <div class="flex items-center gap-[20px] bg-transparent z-10">
+          <a href="#" class="text-white"><img src="assets/images/Footer/facebook.svg" alt="facebook"></a>
+          <a href="#" class="text-white"><img src="assets/images/Footer/x.svg" alt="x"></a>
+          <a href="#" class="text-white"><img src="assets/images/Footer/instagram.svg" alt="instagram"></a>
+          <a href="#" class="text-white"><img src="assets/images/Footer/linkedin.svg" alt="linkedin"></a>
+          <a href="#" class="text-white"><img src="assets/images/Footer/simple-icons_tripadvisor.svg" alt="icons_tripadvisor"></a>
+        </div>
+      </div>
+      <div class="border-bottom mx-[57px]"></div>
+      <div class="flex justify-between items-center pt-[20px] px-[75px]">
+        <a href="#"><img class="w-[154px]" src="assets/images/Footer/Logo.png" alt=""></a>
+        <button class="text-white py-[11.5px] px-[6.25px]">
+          <i
+          class="fa-solid fa-bars"
+          style="width: 37.5px; height: 25px; font-size: 25px"
+          ></i>
+        </button>
+      </div>
+    </nav>
     <!-- NAVBAR END -->
 
     <!-- SLIDER START -->
     <div class="slider relative overflow-hidden w-full">
       <div class="slides flex transition-transform duration-[2000ms] ease-in-out">
-        <!-- defaultNavbar -->
-        <nav class="defaultNavbar absolute top-0 w-full">
-          <div class="flex justify-end items-center gap-[30px] py-[15px] pr-[90px]">
-            <span class="josefin-sans font-light text-white">KVKK</span>
-            <div class="flex items-center gap-[5px] text-white josefin-sans font-light cursor-pointer"><img src="assets/images/Footer/mail.svg" alt="mail">info@whotel.com</div>
-            <div class="flex items-center gap-[20px] bg-transparent z-10">
-              <a href="#" class="text-white"><img src="assets/images/Footer/facebook.svg" alt="facebook"></a>
-              <a href="#" class="text-white"><img src="assets/images/Footer/x.svg" alt="x"></a>
-              <a href="#" class="text-white"><img src="assets/images/Footer/instagram.svg" alt="instagram"></a>
-              <a href="#" class="text-white"><img src="assets/images/Footer/linkedin.svg" alt="linkedin"></a>
-              <a href="#" class="text-white"><img src="assets/images/Footer/simple-icons_tripadvisor.svg" alt="icons_tripadvisor"></a>
-            </div>
-          </div>
-          <div class="border-bottom mx-[57px]"></div>
-          <div class="flex justify-between items-center pt-[20px] px-[75px]">
-            <a href="#"><img class="w-[154px]" src="assets/images/Footer/Logo.png" alt=""></a>
-            <button class="text-white py-[11.5px] px-[6.25px]">
-              <i
-                class="fa-solid fa-bars"
-                style="width: 37.5px; height: 25px; font-size: 25px"
-              ></i>
-            </button>
-          </div>
-        </nav>
-
+      
         <img
+          class="sliderImg"
           src="assets/images/Sliders/slider-1.jpg"
           alt="slider-1"
           class="w-full object-cover"
         />
         <img
+          class="sliderImg"
           src="assets/images/Sliders/slider-2.jpg"
           alt="slider-2"
           class="w-full object-cover"
         />
         <img
+          class="sliderImg"
           src="assets/images/Sliders/slider-3.jpg"
           alt="slider-3"
           class="w-full object-cover"
         />
         <img
+          class="sliderImg"
           src="assets/images/Sliders/slider-4.jpg"
           alt="slider-4"
           class="w-full object-cover"
         />
       </div>
 
+      
+
       <!-- REZERVASYON HERO -->
       <div class="absolute bottom-[32px] left-[432px] w-[1062px] reservation">
         <div class="reservation-container flex justify-between items-center p-5  border-purple-500">
 
-          <div class="reservation-item flex gap-[8px] items-center text-center border-dotted  border-purple-300 px-5">
-            <img src="assets/images/Sliders/Export_fill.svg" alt="">
-            <div class="flex flex-col gap-[13px]">
-              <span class="josefin-sans font-medium text-[18px] leading-[18px] text-customRed font-bold">Giriş Tarihi</span>
-              <span class="josefin-sans text-gray-700">14 Ağustos 2024</span>
+          <div class="relative">
+            <div class="absolute top-[-304px] left-[-20px] calendarToHide hidden">
+              <div class="flex flex-col items-center justify-center bg-gray-900 text-white">
+                <div class="bg-white text-black w-[300px] shadow-lg p-4">
+                  <div class="flex justify-between items-center mb-4">
+                    <button class="text-gray-600 hover:text-black transition-colors">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <span class="text-lg font-semibold">Ağustos 2024</span>
+                    <button class="text-gray-600 hover:text-black transition-colors">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </div>
+              
+                  <div class="grid grid-cols-7 gap-2 text-xs text-center">
+                    <div class="font-semibold text-gray-500">PZT</div>
+                    <div class="font-semibold text-gray-500">SA</div>
+                    <div class="font-semibold text-gray-500">ÇRŞ</div>
+                    <div class="font-semibold text-gray-500">PRŞ</div>
+                    <div class="font-semibold text-gray-500">CM</div>
+                    <div class="font-semibold text-gray-500">CMT</div>
+                    <div class="font-semibold text-gray-500">PZR</div>
+                  </div>
+              
+                  <div class="grid grid-cols-7 gap-2 text-center mt-2">
+                    <div></div> 
+                    <div></div> 
+                    <div></div> 
+                    <div class="text-gray-800">1</div>
+                    <div class="text-gray-800">2</div>
+                    <div class="text-gray-800">3</div>
+                    <div class="text-gray-800">4</div>
+              
+                    <div class="text-gray-800">5</div>
+                    <div class="text-gray-800">6</div>
+                    <div class="text-gray-800">7</div>
+                    <div class="text-gray-800">8</div>
+                    <div class="text-gray-800">9</div>
+                    <div class="text-gray-800">10</div>
+                    <div class="text-gray-800">11</div>
+              
+                    <div class="text-gray-800">12</div>
+                    <div class="text-gray-800">13</div>
+                    <div class="text-gray-800">14</div>
+                    <div class="text-gray-800">15</div>
+                    <div class="text-gray-800">16</div>
+                    <div class="text-gray-800">17</div>
+                    <div class="text-gray-800">18</div>
+              
+                    <div class="text-gray-800">19</div>
+                    <div class="text-gray-800">20</div>
+                    <div class="text-gray-800">21</div>
+                    <div class="text-gray-800">22</div>
+                    <div class="text-gray-800">23</div>
+                    <div class="text-gray-800">24</div>
+                    <div class="text-gray-800">25</div>
+              
+                    <div class="text-gray-800">26</div>
+                    <div class="text-gray-800">27</div>
+                    <div class="text-gray-800">28</div>
+                    <div class="text-gray-800">29</div>
+                    <div class="text-gray-800">30</div>
+                    <div class="text-gray-800">31</div>
+                    <div class="text-gray-400">1</div> 
+                    
+                    <div class="text-gray-400">2</div> 
+                    <div class="text-gray-400">3</div>
+                    <div class="text-gray-400">4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reservation-item calendar cursor-pointer flex gap-[8px] items-center text-center border-dotted  border-purple-300 px-5">
+              <img src="assets/images/Sliders/Export_fill.svg" alt="">
+              <div class="flex flex-col gap-[13px]">
+                <span class="josefin-sans font-medium text-[18px] leading-[18px] text-customRed font-bold">Giriş Tarihi</span>
+                <span class="josefin-sans text-gray-700">14 Ağustos 2024</span>
+              </div>
             </div>
           </div>
 
-          <div class="reservation-item flex gap-[8px] items-center text-center border-dotted  border-purple-300 px-5">
+          <div class="reservation-item flex gap-[8px] items-center text-center border-dotted  border-purple-300 px-5 border">
             <img src="assets/images/Sliders/Export_fill.svg" alt="">
             <div class="flex flex-col gap-[13px]">
               <span class="josefin-sans font-medium text-[18px] leading-[18px] text-customRed font-bold">Çıkış Tarihi</span>
