@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 400) {
+    if (scrollPosition > 600) {
       navbar.style.opacity = "1";
       navbar.style.visibility = "visible";
       reservation.style.visibility = "hidden";
